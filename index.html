@@ -1,83 +1,196 @@
 <html>
   <head>
     <title>Piollos Patos - San Caetano 2022</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+
+      /* Remove extra left and right margins, due to padding in columns */
+      .row {margin: 0 -5px;}
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 16px;
+        text-align: left;
+        background-color: #f1f1f1;
+      }
+
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
     <h2>Piollos Patos - San Caetano 2022</h2>
 
-    <h1>Enma</h1>
-    <code>
-    01010100 01110010 01100001 01100100
-    <br/>
-    01110101 01100011 01110100 01101111
-    <br />
-    01110010 00100000 01000010 01101001
-    <br />
-    01101110 01100001 01110010 01101001
-    <br />
-    01101111
-    <code>
 
-    <p>
-      <i>El perro (🐕) de San Roque no tiene rabo.</i>
-    </p>
-    <b>Canadiensebratislavojallejo</b>
-    <br />
-    <br />
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>Enma</h3>
+          <code>
+          01010100 01110010 01100001 01100100
+          <br/>
+          01110101 01100011 01110100 01101111
+          <br />
+          01110010 00100000 01000010 01101001
+          <br />
+          01101110 01100001 01110010 01101001
+          <br />
+          01101111
+          <code>
 
+          <p>
+            <i>El perro (🐕) de San Roque no tiene rabo.</i>
+          </p>
+          <b>Canadiensebratislavojallejo</b>
+        </div>
 
-    <h3>Bossman</h3>
-    <p>De pequeno confundiano co seu irmàn pero agora da PEIN. Non o leves as rocas... e sinon leva papel.</p> 
+        <div class="card">
+          <h3>Josito</h3>
+          <p>
+            Chaplinero, Viveu cantos de sirena escarchadas.
+            Viveu a vida en blanco e negro e agora é un pirata.
+            <br />
+            Frase favorita: <i>CAÑA AKI</i>
+          </p>
+        </div>
 
-    <h3>Popi</h3>
-    <p>De pequeno o confundían co seu irmàn e agora o confunden cunha boia... menos mal que leva un Tricornio. Sempre foi un Pillo xogando ao Poker</p>
+        <div class="card">
+          <h3>Ovo</h3>
+          <p>
+            E coma chicho terremoto, todo o que proba daselle ben.
+            "relacionado co deporte" O mellor que se lle dá e NON vir as comidas.
+          </p>
+        </div>
 
-    <h3>Famio</h3>
-    <p>Retornou de alemania buscando unha vida mellor, e ingeniero pero non o parece. Hachicador profesional (piligrim fucker).</p>
+        <div class="card">
+          <h3>Ismita</h3>
+          <p>
+            O máis guapo dos piollos cando foi unha putita rubia !!
+            Informático de poca altura e montamuebles de baixura.
+          </p>
+        </div>
+      </div>
 
-    <h3>Josito</h3>
-    <p>Chaplinero, Viveu cantos de sirena escarchadas. Viveu a vida en blanco e negro e agora é un pirata.
-    <br/>
-    Frase favorita: <i>CAÑA AKI</i>
-    </p>
+      <div class="column">
+        <div class="card">
+          <h3>Bossman</h3>
+          <p>
+            De pequeno confundiano co seu irmàn pero agora da PEIN.
+            Non o leves as rocas... e sinon leva papel.
+          </p>
+        </div>
 
-    <h3>Tonecho</h3>
-    <p>E un Kamaleon, polifacético forzoso, fai churros coma tellas.<br/>
-    <i>"O COCHE DE TONECHO PARESE UN AUTOBUS"</i> (14) denunsiouno
-    Castromil. ZIP</p>
+        <div class="card">
+          <h3>Tonecho</h3>
+          <p>
+            E un Kamaleon, polifacético forzoso, fai churros coma tellas.<br />
+            <i>"O COCHE DE TONECHO PARESE UN AUTOBUS"</i> (14) denunsiouno
+            Castromil. ZIP
+          </p>
+        </div>
 
-    <h3>Patan (<i>Patanus polemicus</i>)</h3>
-    <p>Viveu o soño americano no petril e consijeuno. Monento do día favorito. Siesta no altavoz.</p>
+        <div class="card">
+          <h3>Canini</h3>
+          <p>Di a lenda que non hai tanga que lle cubra os Collins</p>
+        </div>
 
-    <h3>Pancri</h3>
-    <p>De soldador a carteiro xa ten que dar voltas . De pequeno era rubio pasouse a moreno e ahora vai polo blanco.</p>
+        <div class="card">
+          <h3>Newjersei</h3>
+          <p>VOTA NJ</p>
+        </div>
+      </div>
 
-    <h3>Ovo</h3>
-    <p>E coma chicho terremoto, todo o que proba daselle ben."relacionado co deporte" O mellor que se lle dá e NON vir as
-    comidas.</p>
+      <div class="column">
+        <div class="card">
+          <h3>Popi</h3>
+          <p>
+            De pequeno o confundían co seu irmàn e agora o confunden cunha boia...
+            menos mal que leva un Tricornio. Sempre foi un
+            Pillo xogando ao Poker.
+          </p>
+        </div>
 
-    <h3>Canini</h3>
-    <p>Di a lenda que non hai tanga que lle cubra os Collins</p>
+        <div class="card">
+          <h3>Patan (<i>Patanus polemicus</i>)</h3>
+          <p>
+            Viveu o soño americano no petril e consijeuno.
+            Monento do día favorito. Siesta no altavoz.
+          </p>
+        </div>
 
-    <h3>Cabezas</h3>
-    <p>Sempre estuvo aquí, Señorito ferrolano estudiante universal busca unha plaza nun sitio singular, oído selectivo.</p>
+        <div class="card">
+          <h3>Cabezas</h3>
+          <p>Sempre estuvo aquí, Señorito ferrolano estudiante universal busca unha plaza nun sitio singular, oído selectivo.
+          </p>
+        </div>
 
-    <h3>Vicky</h3>
-    <p>Jack Daniels e seu apellido levalo pa casa era jodido.<br/>
-    Disque ven para o ano…
-    </p>
+        <div class="card">
+          <h3>Moma</h3>
+          <p>
+            Patrón mayor de moita altura, facendo as Seychelles de patrón retiro dorado de condutor.
+          </p>
+        </div>
+      </div>
 
-    <h3>Ismita</h3>
-    <p>O máis guapo dos piollos cando foi unha putita rubia !! Informático de poca altura e montamuebles de baixura.</p>
+      <div class="column">
+        <div class="card">
+          <h3>Famio</h3>
+          <p>
+            Retornou de alemania buscando unha vida mellor, e ingeniero pero non o parece.
+            Hachicador profesional (piligrim fucker).
+          </p>
+        </div>
 
-    <h3>Newjersei</h3>
-    <p>VOTA NJ</p>
+        <div class="card">
+          <h3>Pancri</h3>
+          <p>
+            De soldador a carteiro xa ten que dar voltas.
+            De pequeno era rubio pasouse a moreno e ahora vai polo blanco.
+          </p>
+        </div>
 
-    <h3>Moma</h3>
-    <p>Patrón mayor de moita altura, facendo as Seychelles de patrón retiro dorado de condutor.</p>
+        <div class="card">
+          <h3>Vicky</h3>
+          <p>Jack Daniels e seu apellido levalo pa casa era jodido.<br />
+            Disque ven para o ano…
+          </p>
+        </div>
 
-    <h3>Chuli</h3>
-    <p>Navajero sin navaja entrenador de lenguados, Gamberro natural sempre metido entre o fume, as veces toca a trompeta e non
-    ten estudios música,</p>
+        <div class="card">
+          <h3>Chuli</h3>
+          <p>
+            Navajero sin navaja entrenador de lenguados, Gamberro natural sempre metido entre o fume,
+            as veces toca a trompeta e non ten estudios música.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
